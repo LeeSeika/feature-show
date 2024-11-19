@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="Config">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/config/enter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Mysql">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/config/conf_mysql.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="scannedPathMapping">
+      <map>
+        <entry key="file://$PROJECT_DIR$/config/conf_mysql.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732005398128" />
+              <option name="schema">
+                <list>
+                  <option value="Mysql" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/config/enter.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732005465040" />
+              <option name="schema">
+                <list>
+                  <option value="Config" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/core/conf.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732006015221" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/core/gorm.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732006122420" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/global/global.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732006030340" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732006126191" />
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableStructMapping">
+      <map>
+        <entry key="config" value="Config" />
+        <entry key="mysql" value="Mysql" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1731997586219" />
+  </component>
+</project>
