@@ -1,8 +1,10 @@
 package main
 
 import (
+	"go.uber.org/zap"
 	"gv_server/core"
 	"gv_server/global"
+	"gv_server/routers"
 )
 
 func main() {
@@ -12,5 +14,9 @@ func main() {
 	global.Log = core.InitZap(&global.Config.ZapConfig)
 	//初始化数据库连接
 	global.Db = core.InitGorm()
-	global.Log.Error("程序启动成功")
+	//初始化路由
+	router := routers.InitRouter()
+	addr := global.Config.System.GetAddr()
+	global.Log.Info("程序运行端口地址:", zap.String("addr:", addr))
+	router.Run(addr)
 }

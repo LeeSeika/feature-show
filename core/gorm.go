@@ -1,7 +1,6 @@
 package core
 
 import (
-	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -27,8 +26,7 @@ func InitGorm() *gorm.DB {
 		Logger: mysqlLogger},
 	)
 	if err != nil {
-		global.Log.Error("数据库连接失败", zap.String("err", err.Error()))
-		global.Log.Error("DNS:", zap.String("dns", dns))
+		global.Log.Sugar().Error("数据库连接失败,\nerr:", err, ",\ndns:", dns)
 		return nil
 	}
 	sqlDb, _ := db.DB()

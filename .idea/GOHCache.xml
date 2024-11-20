@@ -63,7 +63,7 @@
         <entry key="file://$PROJECT_DIR$/config/enter.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1732065826549" />
+              <option name="lastModified" value="1732071691699" />
               <option name="schema">
                 <list>
                   <option value="Config" />
@@ -82,7 +82,7 @@
         <entry key="file://$PROJECT_DIR$/core/gorm.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1732069393622" />
+              <option name="lastModified" value="1732071973600" />
             </ScannedPath>
           </value>
         </entry>
@@ -103,7 +103,14 @@
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1732069618470" />
+              <option name="lastModified" value="1732072043741" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/routers/enter.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732071749007" />
             </ScannedPath>
           </value>
         </entry>
