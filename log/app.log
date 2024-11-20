@@ -1,0 +1,13 @@
+ZapLog	2024/11/20 - 10:25:23.31150	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 10:25:23.57633	[34mINFO[0m	core/gorm.go:41	数据库连接成功
+ZapLog	2024/11/20 - 10:25:51.09390	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 10:25:51.34477	[34mINFO[0m	core/gorm.go:41	数据库连接成功
+ZapLog	2024/11/20 - 10:25:51.34477	[31mERROR[0m	feature-show/main.go:15	程序启动成功
+ZapLog	2024/11/20 - 10:26:10.10847	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 10:26:10.37487	[34mINFO[0m	core/gorm.go:41	数据库连接成功
+ZapLog	2024/11/20 - 10:26:10.37487	[31mERROR[0m	feature-show/main.go:15	程序启动成功
+ZapLog	2024/11/20 - 10:26:10.37487	[31mPANIC[0m	feature-show/main.go:16	程序启动失败
+ZapLog	2024/11/20 - 10:26:51.30096	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 10:26:51.54975	[34mINFO[0m	core/gorm.go:41	数据库连接成功
+ZapLog	2024/11/20 - 10:26:51.54975	[31mERROR[0m	feature-show/main.go:15	程序启动成功
+ZapLog	2024/11/20 - 10:26:51.54975	[35mDEBUG[0m	feature-show/main.go:16	程序启动成功

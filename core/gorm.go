@@ -1,18 +1,17 @@
 package core
 
 import (
-	"fmt"
+	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gv_server/global"
-	"log"
 	"time"
 )
 
 func InitGorm() *gorm.DB {
 	if global.Config.Mysql.Host == "" {
-		fmt.Println("mysql地址为空，取消连接。")
+		global.Log.Error("mysql地址为空，取消连接。")
 		return nil
 	}
 	dns := global.Config.Mysql.Dsn()
@@ -28,8 +27,8 @@ func InitGorm() *gorm.DB {
 		Logger: mysqlLogger},
 	)
 	if err != nil {
-		fmt.Sprintf("数据库连接失败 DNS:%v", dns)
-		log.Panic("数据库连接失败", err)
+		global.Log.Error("数据库连接失败", zap.String("err", err.Error()))
+		global.Log.Error("DNS:", zap.String("dns", dns))
 		return nil
 	}
 	sqlDb, _ := db.DB()
@@ -39,6 +38,6 @@ func InitGorm() *gorm.DB {
 	sqlDb.SetMaxOpenConns(100)
 	//连接最大复用时间，不能超过mysql的wait_timeout
 	sqlDb.SetConnMaxLifetime(time.Hour * 4)
-	fmt.Println("数据库连接成功")
+	global.Log.Info("数据库连接成功")
 	return db
 }

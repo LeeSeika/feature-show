@@ -10,10 +10,24 @@
             </set>
           </value>
         </entry>
+        <entry key="LogFileConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/config/conf_zap.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Mysql">
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/config/conf_mysql.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ZapConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/config/conf_zap.go" />
             </set>
           </value>
         </entry>
@@ -33,10 +47,23 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/config/conf_zap.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732069520992" />
+              <option name="schema">
+                <list>
+                  <option value="ZapConfig" />
+                  <option value="LogFileConfig" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/config/enter.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1732005465040" />
+              <option name="lastModified" value="1732065826549" />
               <option name="schema">
                 <list>
                   <option value="Config" />
@@ -55,21 +82,28 @@
         <entry key="file://$PROJECT_DIR$/core/gorm.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1732006122420" />
+              <option name="lastModified" value="1732069393622" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/core/zap.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1732070005649" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/global/global.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1732006030340" />
+              <option name="lastModified" value="1732066993466" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1732006126191" />
+              <option name="lastModified" value="1732069618470" />
             </ScannedPath>
           </value>
         </entry>
@@ -78,7 +112,9 @@
     <option name="tableStructMapping">
       <map>
         <entry key="config" value="Config" />
+        <entry key="log_file_config" value="LogFileConfig" />
         <entry key="mysql" value="Mysql" />
+        <entry key="zap_config" value="ZapConfig" />
       </map>
     </option>
     <option name="lastTimeChecked" value="1731997586219" />
