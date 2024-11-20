@@ -2,7 +2,7 @@
 mysql:
   db: feature_base
   host: 47.109.106.10
-  log_level: debug
+  log_level: dev
   port: 13306
   user: feature
   password: feature20241119

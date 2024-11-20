@@ -8,7 +8,7 @@ type Mysql struct {
 	Db       string `json:"db" yaml:"db" mapstructure:"db"`
 	User     string `json:"user" yaml:"user" mapstructure:"user"`
 	Password string `json:"password" yaml:"password" mapstructure:"password"`
-	LogLevel string `json:"log_level" yaml:"log_level" mapstructure:"log_level"` //日志等级，debug就是输出全部sql，dev，release线上环境
+	LogLevel string `json:"log_level" yaml:"log_level" mapstructure:"log_level"` //日志等级，debug就是输出全部sql，
 }
 
 func (m *Mysql) Dsn() string {
