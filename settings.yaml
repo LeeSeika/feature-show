@@ -1,0 +1,39 @@
+#mysql数据库配置
+mysql:
+  db: feature_base
+  host: 47.109.106.10
+  log_level: dev
+  port: 13306
+  user: feature
+  password: feature20241119
+# Zap日志配置
+zap:
+  # 输出日志的前缀
+  prefix: ZapLog
+  # 输出时间类型
+  timeFormat: 2006/01/02 - 15:04:05.00000
+  # 日志等级
+  level: debug
+  # 调用者追踪
+  caller: true
+  #  堆栈跟踪
+  stackTrace: false
+  #  编码，分为json和console两种模式
+  encode: console
+  # 日志输出到哪里 file | console | both
+  writer: both
+  logFile:
+    #分割文件的大小 单位: MB
+    maxSize: 20
+    #保留旧文件的最大个数
+    maxAge: 31
+    #备份次数
+    backups: 5
+    #是否压缩 默认情况下禁用
+    compress: true
+    output:
+      - "./log/app.log"
+system:
+  env: release
+  host: 0.0.0.0
+  port: 8080

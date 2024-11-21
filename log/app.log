@@ -1,0 +1,44 @@
+ZapLog	2024/11/20 - 10:25:23.31150	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 10:25:23.57633	[34mINFO[0m	core/gorm.go:41	数据库连接成功
+ZapLog	2024/11/20 - 10:25:51.09390	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 10:25:51.34477	[34mINFO[0m	core/gorm.go:41	数据库连接成功
+ZapLog	2024/11/20 - 10:25:51.34477	[31mERROR[0m	feature-show/main.go:15	程序启动成功
+ZapLog	2024/11/20 - 10:26:10.10847	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 10:26:10.37487	[34mINFO[0m	core/gorm.go:41	数据库连接成功
+ZapLog	2024/11/20 - 10:26:10.37487	[31mERROR[0m	feature-show/main.go:15	程序启动成功
+ZapLog	2024/11/20 - 10:26:10.37487	[31mPANIC[0m	feature-show/main.go:16	程序启动失败
+ZapLog	2024/11/20 - 10:26:51.30096	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 10:26:51.54975	[34mINFO[0m	core/gorm.go:41	数据库连接成功
+ZapLog	2024/11/20 - 10:26:51.54975	[31mERROR[0m	feature-show/main.go:15	程序启动成功
+ZapLog	2024/11/20 - 10:26:51.54975	[35mDEBUG[0m	feature-show/main.go:16	程序启动成功
+ZapLog	2024/11/20 - 11:06:19.46468	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:06:19.72709	[34mINFO[0m	core/gorm.go:39	数据库连接成功
+ZapLog	2024/11/20 - 11:06:19.72709	[34mINFO[0m	feature-show/main.go:19	程序运行端口地址:0.0.0.0:8080
+ZapLog	2024/11/20 - 11:07:26.96411	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:07:27.89355	[34mINFO[0m	core/gorm.go:39	数据库连接成功
+ZapLog	2024/11/20 - 11:07:27.89355	[34mINFO[0m	feature-show/main.go:19	程序运行端口地址:0.0.0.0:8080
+ZapLog	2024/11/20 - 11:07:27.89355	[34mINFO[0m	feature-show/main.go:20	程序运行中...
+ZapLog	2024/11/20 - 11:07:27.89355	[31mERROR[0m	feature-show/main.go:21	程序运行中...
+ZapLog	2024/11/20 - 11:17:10.42466	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:17:10.69114	[34mINFO[0m	core/gorm.go:40	数据库连接成功
+ZapLog	2024/11/20 - 11:17:10.69114	[34mINFO[0m	feature-show/main.go:20	程序运行端口地址:	{"": "0.0.0.0:8080"}
+ZapLog	2024/11/20 - 11:17:25.88879	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:17:26.12321	[34mINFO[0m	core/gorm.go:40	数据库连接成功
+ZapLog	2024/11/20 - 11:17:26.12321	[34mINFO[0m	feature-show/main.go:20	程序运行端口地址:	{"add:": "0.0.0.0:8080"}
+ZapLog	2024/11/20 - 11:17:33.01942	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:17:33.31483	[34mINFO[0m	core/gorm.go:40	数据库连接成功
+ZapLog	2024/11/20 - 11:17:33.31483	[34mINFO[0m	feature-show/main.go:20	程序运行端口地址:	{"addr:": "0.0.0.0:8080"}
+ZapLog	2024/11/20 - 11:18:42.49005	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:19:10.73190	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:19:31.80258	[31mERROR[0m	core/gorm.go:30	数据库连接失败,err:%d,dns:%d
+ZapLog	2024/11/20 - 11:19:31.80258	[31mERROR[0m	core/gorm.go:31	数据库连接失败	{"err": "dial tcp 47.109.106.101:13306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", "DNS": "feature:feature20241119@tcp(47.109.106.101:13306)/feature_base?charset=utf8mb4&parseTime=True&loc=Local"}
+ZapLog	2024/11/20 - 11:20:04.69924	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:20:25.75498	[31mERROR[0m	core/gorm.go:30	数据库连接失败,err:%d,dns:%ddial tcp 47.109.106.101:13306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.feature:feature20241119@tcp(47.109.106.101:13306)/feature_base?charset=utf8mb4&parseTime=True&loc=Local
+ZapLog	2024/11/20 - 11:20:25.75498	[31mERROR[0m	core/gorm.go:31	数据库连接失败	{"err": "dial tcp 47.109.106.101:13306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.", "DNS": "feature:feature20241119@tcp(47.109.106.101:13306)/feature_base?charset=utf8mb4&parseTime=True&loc=Local"}
+ZapLog	2024/11/20 - 11:22:03.29346	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:22:07.73649	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:22:28.79095	[31mERROR[0m	core/gorm.go:29	数据库连接失败,err:dial tcp 47.109.106.101:13306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.,dns:feature:feature20241119@tcp(47.109.106.101:13306)/feature_base?charset=utf8mb4&parseTime=True&loc=Local
+ZapLog	2024/11/20 - 11:23:03.14979	[34mINFO[0m	core/zap.go:22	日志初始化成功
+ZapLog	2024/11/20 - 11:23:24.18244	[31mERROR[0m	core/gorm.go:29	数据库连接失败,
+err:dial tcp 47.109.106.101:13306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.,
+dns:feature:feature20241119@tcp(47.109.106.101:13306)/feature_base?charset=utf8mb4&parseTime=True&loc=Local
