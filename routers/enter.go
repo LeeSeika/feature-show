@@ -10,5 +10,13 @@ func InitRouter() *gin.Engine {
 	gin.ForceConsoleColor()
 	gin.SetMode(global.Config.System.Env)
 	router := gin.Default()
+
+	// 示例接口
+	router.GET("/ping", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
+
 	return router
 }
