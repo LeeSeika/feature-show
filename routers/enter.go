@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"gv_server/global"
+	"github.com/leeseika/feature-show/global"
 )
 
 func InitRouter() *gin.Engine {

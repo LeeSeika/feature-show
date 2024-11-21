@@ -1,10 +1,10 @@
 package main
 
 import (
+	"github.com/leeseika/feature-show/core"
+	"github.com/leeseika/feature-show/global"
+	"github.com/leeseika/feature-show/routers"
 	"go.uber.org/zap"
-	"gv_server/core"
-	"gv_server/global"
-	"gv_server/routers"
 )
 
 func main() {

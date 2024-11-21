@@ -1,13 +1,14 @@
 package core
 
 import (
+	"os"
+	"time"
+
+	"github.com/leeseika/feature-show/config"
+	"github.com/leeseika/feature-show/global"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"gv_server/config"
-	"gv_server/global"
-	"os"
-	"time"
 )
 
 func InitZap(config *config.ZapConfig) *zap.Logger {

@@ -1,11 +1,12 @@
 package core
 
 import (
+	"time"
+
+	"github.com/leeseika/feature-show/global"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"gv_server/global"
-	"time"
 )
 
 func InitGorm() *gorm.DB {

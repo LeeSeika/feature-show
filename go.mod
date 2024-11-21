@@ -1,4 +1,4 @@
-module gv_server
+module github.com/leeseika/feature-show
 
 go 1.23
 

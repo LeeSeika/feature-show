@@ -1,9 +1,9 @@
 package core
 
 import (
+	"github.com/leeseika/feature-show/config"
+	"github.com/leeseika/feature-show/global"
 	"github.com/spf13/viper"
-	"gv_server/config"
-	"gv_server/global"
 )
 
 // InitCore 读取yaml配置文件
