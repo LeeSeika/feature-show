@@ -13,8 +13,9 @@ mysql:
   port: 13306
   user: feature
   password: feature20241119
-  max_open_conns: 0 # unlimited
+  max_open_conns: 0 # 0 means unlimited conns
   max_idle_conns: 2
+  # unit is second
   conn_max_lifetime: 300
 
 # log
