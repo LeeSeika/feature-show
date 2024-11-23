@@ -21,13 +21,9 @@ const writeFile = "file"
 
 func Init() error {
 	config := settings.Conf.Log
-	// 构建编码器
 	encoder := zapEncoder(config)
-	// 构建日志级别
 	levelEnabler := zapLevelEnabler(config)
-	// 最后获得Core和Options
 	subCore, options := tee(config, encoder, levelEnabler)
-	// 创建Logger
 	logger := zap.New(subCore, options...)
 
 	zap.ReplaceGlobals(logger)
@@ -106,22 +102,20 @@ func zapLevelEnabler(cfg *settings.Log) zapcore.LevelEnabler {
 }
 func zapWriteSyncer(cfg *settings.Log) zapcore.WriteSyncer {
 	syncers := make([]zapcore.WriteSyncer, 0, 2)
-	// 如果开启了日志控制台输出，就加入控制台书写器
 	if cfg.Writer == writeBoth || cfg.Writer == writeConsole {
 		syncers = append(syncers, zapcore.AddSync(os.Stdout))
 	}
 
-	// 如果开启了日志文件存储，就根据文件路径切片加入书写器
 	if cfg.Writer == writeBoth || cfg.Writer == writeFile {
 		// 添加日志输出器
 		for _, path := range cfg.LogFile.Output {
 			logger := &lumberjack.Logger{
-				Filename:   path,                 //文件路径
-				MaxSize:    cfg.LogFile.MaxSize,  //分割文件的大小
-				MaxAge:     cfg.LogFile.MaxAge,   //已经被分割存储的日志文件最大的留存时间，单位是天
-				MaxBackups: cfg.LogFile.Backups,  //分割存储的日志文件最多的留存个数
-				Compress:   cfg.LogFile.Compress, //是否压缩
-				LocalTime:  true,                 //使用本地时间
+				Filename:   path,
+				MaxSize:    cfg.LogFile.MaxSize,
+				MaxAge:     cfg.LogFile.MaxAge,
+				MaxBackups: cfg.LogFile.Backups,
+				Compress:   cfg.LogFile.Compress,
+				LocalTime:  true,
 			}
 
 			syncers = append(syncers, zapcore.Lock(zapcore.AddSync(logger)))

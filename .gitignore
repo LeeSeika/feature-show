@@ -21,8 +21,15 @@
 go.work
 go.work.sum
 
-# env file
+# Env file
 .env
 
+# Binary
 feature-show-server
+
+# Log files
 log/*.log
+
+# IDE config
+.idea
+.vscode
