@@ -1,0 +1,40 @@
+# app
+app:
+  name: "feature-show"
+  env: "dev"
+  host: "0.0.0.0"
+  port: 8080
+
+# mysql
+mysql:
+  db: feature_base
+  host: 47.109.106.10
+  log_level: dev
+  port: 13306
+  user: feature
+  password: feature20241119
+  max_open_conns: 0 # 0 means unlimited conns
+  max_idle_conns: 2
+  # unit is second
+  conn_max_lifetime: 300
+
+# log
+log:
+  time_format: 2006/01/02 - 15:04:05.00000
+  level: debug
+  caller: true
+  stacktrace: false
+  # json | console
+  encode: console
+  # file | console | both
+  writer: both
+  log_file:
+    # max size for per log file, unit is MB
+    max_size: 20
+    # max log files
+    max_age: 31
+    # backup count
+    backups: 5
+    compress: true
+    output:
+      - "./log/app.log"
