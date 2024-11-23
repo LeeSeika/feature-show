@@ -39,7 +39,7 @@ func main() {
 
 	db, err := mysql.Init()
 	if err != nil {
-		zap.L().Error("logger init error: ", zap.Error(err))
+		zap.L().Error("mysql init error: ", zap.Error(err))
 		return
 	}
 	zap.L().Info("successfully connected to mysql")
