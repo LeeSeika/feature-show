@@ -1,11 +1,11 @@
-# app配置
+# app
 app:
   name: "feature-show"
   env: "dev"
   host: "0.0.0.0"
   port: 8080
 
-#mysql数据库配置
+# mysql
 mysql:
   db: feature_base
   host: 47.109.106.10
@@ -17,28 +17,23 @@ mysql:
   max_idle_conns: 2
   conn_max_lifetime: 300
 
-# Zap日志配置
+# log
 log:
-  # 输出时间类型
   time_format: 2006/01/02 - 15:04:05.00000
-  # 日志等级
   level: debug
-  # 调用者追踪
   caller: true
-  #  堆栈跟踪
   stacktrace: false
-  #  编码，分为json和console两种模式
+  # json | console
   encode: console
-  # 日志输出到哪里 file | console | both
+  # file | console | both
   writer: both
   log_file:
-    #分割文件的大小 单位: MB
+    # max size for per log file, unit is MB
     max_size: 20
-    #保留旧文件的最大个数
+    # max log files
     max_age: 31
-    #备份次数
+    # backup count
     backups: 5
-    #是否压缩 默认情况下禁用
     compress: true
     output:
       - "./log/app.log"
