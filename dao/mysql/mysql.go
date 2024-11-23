@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/leeseika/feature-show/model"
 	"github.com/leeseika/feature-show/settings"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -27,9 +28,20 @@ func Init() (*gorm.DB, error) {
 	if err != nil {
 		return nil, err
 	}
-	sqlDB.SetMaxIdleConns(config.MaxIdleConns)
+	sqlDB.SetMaxIdleConns(config.MaxIDleConns)
 	sqlDB.SetMaxOpenConns(config.MaxOpenConns)
 	sqlDB.SetConnMaxLifetime(time.Second * time.Duration(config.ConnMaxLifeTime))
 
+	err = migrate(db)
+	if err != nil {
+		return nil, err
+	}
+
 	return db, nil
+}
+
+func migrate(db *gorm.DB) error {
+	return db.AutoMigrate(
+		&model.Report{},
+	)
 }

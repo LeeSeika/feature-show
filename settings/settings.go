@@ -63,6 +63,6 @@ type MySQL struct {
 	Host            string `mapstructure:"host"`
 	Port            int    `mapstructure:"port"`
 	MaxOpenConns    int    `mapstructure:"max_open_conns"`
-	MaxIdleConns    int    `mapstructure:"max_idle_conns"`
+	MaxIDleConns    int    `mapstructure:"max_idle_conns"`
 	ConnMaxLifeTime int    `mapstructure:"conn_max_life_time"`
 }
